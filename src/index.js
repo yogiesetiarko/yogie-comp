@@ -11,14 +11,14 @@ function YogieComp(props) {
         className="button"
         raised={true}
       >
-        Yogie Button
+        {props.title}
       </Button>
     </div>
   );
 }
 
 YogieComp.propTypes = {
-  name: PropTypes.string
+  title: PropTypes.string
 };
 
 export default YogieComp;
