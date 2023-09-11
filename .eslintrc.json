@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "env": { 
+    "es2020": true,
+    "browser": true
+  },
+  "parserOptions": {
+    // "ecmaVersion": 2020,
+    // or
+    // "ecmaVersion": 11,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    }
+  },
+  "plugins": [
+    "react-hooks",
+    "jsx-a11y",
+    "react",
+    "import",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:all",
+    // "eslint:recommended",
+    "plugin:react/all"
+  ],
+  "rules": {
+    "no-console": 2
+  },
+  // "ignorePatterns": ["src/layouts/ExampleLayout.js"]
+  // "ignorePatterns": ["**/*.js"]
+  "ignorePatterns": ["src/**/*.js"]
+  // "noInlineConfig": true
+}
